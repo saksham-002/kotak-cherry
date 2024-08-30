@@ -1,0 +1,25 @@
+pipeline {
+    agent none
+    options {
+      	skipDefaultCheckout()
+  		disableConcurrentBuilds()
+    }
+
+    stages {
+
+      stage('docker-build'){
+          agent any
+
+                steps  {
+
+                        checkout scm
+                        sh ''' pwd
+                         cd express_api
+                         make docker-build '''
+
+                }
+      }
+
+    } // End stages
+
+} // End
