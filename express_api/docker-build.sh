@@ -27,4 +27,4 @@ docker push ${REGISTRY}/${ecr_repo_name}:${tag}
 echo "Image pushed successfully."
 
 docker rmi -f ${REGISTRY}/${ecr_repo_name}:${tag}
-echo "Deleted image from build server.
+echo "Deleted image from build server."
