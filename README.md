@@ -61,7 +61,7 @@ command: kubectl apply -f <file-name>
 Used multibranch pipeline config to enable multiple branches to build the application with it's dependencies and create a docker tag, hence, pushes into private ECR..
 
 
-#### Deploy job url: [http://3.7.76.161:8080/job/Deploy/job/prod-deploy/configure] ####
+#### Deploy job url: [http://3.7.76.161:8080/job/Deploy/job/prod-deploy/] ####
  
 It is a multi deploy app job.
 Select the NAMESPACE,APP_NAME,DEPLOY_TAG for deployment
