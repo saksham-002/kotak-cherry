@@ -75,4 +75,7 @@ Used groovy script for fetching build tag from ECR.
 3.108.114.248 kotak-test.railsapi.com
 13.232.235.121 kotak-test.railsapi.com
 
+
+##### NOTE : Use terraform destory to remove all the resources if not in use #####
+
   
