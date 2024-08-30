@@ -16,7 +16,7 @@ ecr_repo_name="express-api"
 aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 861276100864.dkr.ecr.ap-south-1.amazonaws.com
 
 echo "*** Building Docker image: ${REGISTRY}/${ecr_repo_name}:${tag} ***"
-docker build -t ${REGISTRY}/${ecr_repo_name}:${tag} .
+docker build -f Dockerfile -t ${REGISTRY}/${ecr_repo_name}:${tag} .
 echo "Image built successfully".
 
 echo "Pushing image to Docker Registry."
