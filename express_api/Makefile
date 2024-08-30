@@ -1,4 +1,4 @@
 docker-build:
-	chmod +x docker-build.sh
+	chmod 777 ./docker-build.sh
 	./docker-build.sh
 
