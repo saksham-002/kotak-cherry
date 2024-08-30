@@ -8,10 +8,11 @@ BASEDIR=$(dirname "$0")
 AWS_REGION="ap-south-1"
 REGISTRY="861276100864.dkr.ecr.ap-south-1.amazonaws.com"
 
-tag="${epoch}"
+
 git_branch=${BRANCH_NAME}
 epoch=$(date +%s)
 ecr_repo_name="express-api"
+tag="${git_branch}-${epoch}"
 
 aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 861276100864.dkr.ecr.ap-south-1.amazonaws.com
 
